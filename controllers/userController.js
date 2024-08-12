@@ -142,7 +142,7 @@ module.exports.dp=async(req,res,next)=>{
 }
 else{
   if(req.body.params.avatarImage.data==undefined&&req.body.params.avatarImage.length<65){
-    console.log(req.body.params.avatarImage)
+   // console.log(req.body.params.avatarImage)
     const getObjectParams={
       Bucket:process.env.AWS_BUCKET_NAME,
       Key:req.body.params.avatarImage
